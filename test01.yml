@@ -7,9 +7,9 @@
      name: git
      state: present
 
-  - name: i want to install tree
+  - name: i want to install wget
     apt:
-     name: tree
+     name: wget
      state: present
   
   
