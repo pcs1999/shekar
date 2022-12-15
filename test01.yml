@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: yo install git
+    apt:
+     name: git
+     state: present
+  - name: yo install tree
+    apt:
+     name: tree
+     state: present
+  - name: i want to install apache2
+    apt: apache2
+    state: present
+  
+  
+  
+
