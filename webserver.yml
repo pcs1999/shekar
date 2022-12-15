@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: yo install apache2 on my ubuntu2
+    apt:
+     name: apache2
+     state: present
+
+  - name: i want to start aache2 on my ubuntu2
+    service:
+     name: apache2
+     state: started 
