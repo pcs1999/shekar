@@ -1,0 +1,16 @@
+---
+- hosts: pcshosts
+  become: yes
+  gather_facts: yes
+  tasks:
+  - name: yo install java on my machine ubuntu2
+    apt:
+     name: "{{myjavaonubuntu}}"
+     state: present
+    when: ansible_os_family=="Debian"
+
+  - name: yo install java on my redhat machine
+    yum:
+     name: "{{myjavaonredhat}}"
+     state: present 
+    when: ansible_os_family=="RedHat"
