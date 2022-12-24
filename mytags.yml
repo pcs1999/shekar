@@ -4,9 +4,16 @@
   gather_facts: yes
   tasks:
   - name: i want to install tree
-    apt: tree
-    state: present
+    apt:
+       name: tree
+       state: present
 
   - name: i want to install git
-    apt: git
-    state: present
+    apt: 
+     name: git
+     state: present
+  
+  - name: i want to install wget
+    apt: 
+     name: wget
+     state: present
