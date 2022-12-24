@@ -3,6 +3,13 @@
   become: yes
   gather_facts: yes
   tasks:
-   - name: i want to execute my command
-     command: hostname -f
-     
+  - name: i want to execute my command
+    command: hostname -f
+    register: pcs
+
+  - name: i want to display my linux command output
+    debug:
+     msg: "{{pcs}}"
+
+  
+
