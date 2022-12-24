@@ -11,5 +11,17 @@
     debug:
      msg: "{{pcs}}"
 
+  - name: i want to install git
+    apt:
+     name: git
+     state: present
+    when: pcs.stderr==""
+
+  - name: i want to install tree
+    apt:
+     name: tree
+     state: tree
+    when: pcs.stderr!=""
+
   
 
