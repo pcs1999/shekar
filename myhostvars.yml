@@ -1,0 +1,15 @@
+---
+- hosts: yes
+  become: yes
+  gather_facts: yes
+  vars:
+    mvars1: wget
+    mvars2: tree
+    mvars3: git
+
+  tasks:
+  - name: i wants to install tree
+    debug:
+     msg: "{{mvars2}}"
+
+
