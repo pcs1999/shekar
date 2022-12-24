@@ -1,5 +1,5 @@
 ---
-- hosts: yes
+- hosts: pcshosts
   become: yes
   gather_facts: yes
   vars:
