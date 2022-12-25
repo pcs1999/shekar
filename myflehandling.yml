@@ -20,6 +20,14 @@
     template:
      src: index.j2
      dest: /var/www/html/index.html
+
+  - name: i want to install tree
+    apt:
+     name: tree
+     state: present
+    notify: restart webserver
+    
+
   handlers:
    - name:  restart webserver
      service:
