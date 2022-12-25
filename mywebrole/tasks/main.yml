@@ -1,2 +1,8 @@
 ---
-# tasks file for mywebrole
+# task for mywebrole
+- name: i want to execute webserver apache2
+  apt:
+   name: apache2
+   state: present 
+
+
