@@ -1,0 +1,4 @@
+---
+ - name: i want to craete a file in below path
+    file: 
+     path: /home/ubuntu/mytestfile 
