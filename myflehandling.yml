@@ -18,4 +18,4 @@
   - name: i want to change index page by creating a file
     template:
      src: index.j2
-     dest: /var/www/html/index.j2
+     dest: /var/www/html/index.html
