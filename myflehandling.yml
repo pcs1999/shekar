@@ -9,3 +9,8 @@
      name: apache2
      state: present
     when: ansible_os_family=="Debian"
+ 
+  - name: i want to copy file from one to another floder
+    copy:
+     src: mystatic.txt
+     dest: /home/ubuntu/mystatic.txt
