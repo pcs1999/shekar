@@ -8,13 +8,13 @@
     apt:
      name: apache2
      state: present
-    notify: iwant to restrtr my server
+    notify: restart webserver
  
   - name: i want to copy file from one to another floder
     copy:
      src: mystatic.txt
      dest: /home/ubuntu/mystatic.txt
-    notify: iwant to restrtr my server
+    notify: restart webserver
     
   - name: i want to change index page by creating a file2
     template:
