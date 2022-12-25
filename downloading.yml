@@ -6,5 +6,5 @@
   - name: i want to download a file from the internet
     get_url:
      url: https://get.jenkins.io/war-stable/2.375.1/jenkins.war
-     dest: /home/ubuntu/pcs.war
+     dest: /home/ubuntu/jenkins.war
      force_basic_auth: yes
