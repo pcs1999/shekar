@@ -1,4 +1,5 @@
 ---
  - name: i want to craete a file in below path
    file: 
-    path: /home/dec15/mytestfile  
+    path: /home/ubuntu/mytestfile  
+    state: touch
