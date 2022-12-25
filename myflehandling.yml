@@ -17,7 +17,7 @@
      dest: /home/ubuntu/mystatic.txt
     notify: iwant to restrtr my server
     
-  - name: i want to change index page by creating a file
+  - name: i want to change index page by creating a file2
     template:
      src: index.j2
      dest: /var/www/html/index.html
