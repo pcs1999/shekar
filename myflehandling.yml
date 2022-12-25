@@ -9,14 +9,21 @@
      name: apache2
      state: present
     when: ansible_os_family=="Debian"
+    notify: iwant to restrtr my server
  
   - name: i want to copy file from one to another floder
     copy:
      src: mystatic.txt
      dest: /home/ubuntu/mystatic.txt
+    notify: iwant to restrtr my server
     
   - name: i want to change index page by creating a file
     template:
      src: index.j2
      dest: /var/www/html/index.html
-     
+
+  handlers:
+   - name: iwant to restrtr my server
+     service:
+      name: apache2
+      state: present
