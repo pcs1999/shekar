@@ -1,0 +1,6 @@
+---
+- name: adding a user called chandra01
+  user: 
+   name: tomcat
+   shell: state
+   
