@@ -1,5 +1,15 @@
 ---
 # task for mywebrole
 
+- include_tasks: user.yml
+- include_tasks: installing_java.yml
+- include_tasks: download.yml
+- include_tasks: permission.yml
+- include_tasks: configdashboard.yml
+- include_tasks: starttomcat.yml
+
+
+
+
 
 

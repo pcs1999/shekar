@@ -1,0 +1,9 @@
+---
+- name: installing java on my machine
+- apt:
+   update_cache: yes
+
+- name: install java
+  apt:
+   name: openjdk-8-jdk
+   
