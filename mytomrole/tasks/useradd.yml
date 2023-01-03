@@ -1,7 +1,7 @@
 ---
 - name: adding a user called chandra01
   user: 
-   name: tomcat
+   name: dec15
    home: /opt/tomcat
    shell: /bin/false
    state: present 
